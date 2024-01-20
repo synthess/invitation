@@ -618,7 +618,7 @@
 	    this.type      = type
 	    this.$element  = $(element)
 	    this.options   = $.extend({}, Calendario.DEFAULTS, this.$element.data(), options)
-	    this.today     = new Date("4/27/2024") //이벤트 날짜 입력
+	    this.today     = new Date("5/4/2024") //이벤트 날짜 입력
 	    this.month     = (isNaN(this.options.month) || this.options.month === null) ? this.today.getMonth() : this.options.month - 1
 	    this.year      = (isNaN(this.options.year) || this.options.year === null) ? this.today.getFullYear() : this.options.year
 	    this.caldata   = this.processCaldata(this.options.caldata)
