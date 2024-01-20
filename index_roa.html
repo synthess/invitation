@@ -398,7 +398,7 @@
 <script>
 	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 		 mapOption = { 
-			center: new kakao.maps.LatLng(37.39279493027256,127.1120446864334), // 지도의 중심좌표
+			center: new kakao.maps.LatLng(35.8336735, 128.5776845), // 지도의 중심좌표
 			level: 4 // 지도의 확대 레벨
 		};
 	
@@ -410,7 +410,7 @@
 	
 	// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
 	var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-		markerPosition = new kakao.maps.LatLng(37.39279493027256,127.1120446864334); // 마커가 표시될 위치입니다
+		markerPosition = new kakao.maps.LatLng(35.8336735, 128.5776845); // 마커가 표시될 위치입니다
 	
 	// 마커를 생성합니다
 	var marker = new kakao.maps.Marker({
@@ -434,11 +434,11 @@
 	
 	// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 	var content = '<div class="customoverlay">' +
-					'    <span class="title">파티 플레이스</span>' +
+					'    <span class="title">앞산주택</span>' +
 					'</div>';
 	
 	// 커스텀 오버레이가 표시될 위치입니다 
-	var position = new kakao.maps.LatLng(37.39279493027256,127.1120446864334);  
+	var position = new kakao.maps.LatLng(35.8336735, 128.5776845);  
 	
 	// 커스텀 오버레이를 생성합니다
 	var customOverlay = new kakao.maps.CustomOverlay({
