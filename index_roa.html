@@ -564,19 +564,10 @@
 							Kakao.init('d2233979cfdc968e5d27edb0077e220d');
 							// // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 							
-							Kakao.Link.createDefaultButton({
-							container: '#kakao-link-btn',
-							  objectType: 'feed',
-							  content: {
-								title: '박로아 처음생일 (아빠 박영우, 엄마 고보경)',
-								description: '2024년 4월 27일 (토요일) 오후 5시 30분',
-								imageUrl: 'assets/v2/img/sample/baby_49.jpg',
-								link: {
-								  mobileWebUrl: 'https://url.kr/3fb5wc',
-								  webUrl: 'https://url.kr/3fb5wc'
-								}
-							  },
-							  buttonTitle: '자세히 보기',
+							Kakao.Link.createScrapButton({
+								container: '#kakao-link-btn',
+								requestUrl: 'https://url.kr/3fb5wc',
+								templateId : '103252'
 							});
 						</script>
 						<a href="#" id="copyUrl" class="icon icon-round no-border icon-sm"><img src="assets/images/logo/logo_link_dark.jpg" class="sns-logo" style="width:55px; height: 55px; line-height: 55px; border-radius: 15px; margin:0 auto;"><span class="font-myeongjo font-13">링크 복사</span></a>
