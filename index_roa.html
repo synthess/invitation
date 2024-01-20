@@ -564,19 +564,34 @@
 							// Kakao.init('c43230f80ed5e5becc3776ded7041d7z');
 							// // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
 							
-							Kakao.Link.createDefaultButton({
-							container: '#kakao-link-btn',
-							  objectType: 'feed',
-							  content: {
-								title: '박로아 처음생일 (아빠 박영우, 엄마 고보경)',
-								description: '2024년 4월 27일 (토요일) 오후 5시 30분',
-								imageUrl: 'assets/v2/img/sample/baby_49.jpg',
+							Kakao.Share.createDefaultButton({
+								container: '#kakao-link-btn',
+								objectType: 'feed',
+								content: {
+															title: '박로아 처음생일 (아빠 박영우, 엄마 고보경)',
+															description: '2024년 4월 27일 (토요일) 오후 5시 30분',
+								imageUrl:
+									'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
 								link: {
-								  mobileWebUrl: 'https://synthess.github.io/invitation/index_roa.html',
-								  webUrl: 'https://synthess.github.io/invitation/index_roa.html'
+									// [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
+									mobileWebUrl: 'https://synthess.github.io/invitation/index_roa.html',
+									webUrl: 'https://synthess.github.io/invitation/index_roa.html',
+								},
+								},
+								social: {
+								likeCount: 286,
+								commentCount: 45,
+								sharedCount: 845,
+								},
+								buttons: [
+								{
+									title: '자세히 보기',
+									link: {
+									mobileWebUrl: 'https://synthess.github.io/invitation/index_roa.html',
+									webUrl: 'https://synthess.github.io/invitation/index_roa.html',
+									},
 								}
-							  },
-							  buttonTitle: '자세히 보기',
+								],
 							});
 						</script>
 						<a href="#" id="copyUrl" class="icon icon-round no-border icon-sm"><img src="assets/images/logo/logo_link_dark.jpg" class="sns-logo" style="width:55px; height: 55px; line-height: 55px; border-radius: 15px; margin:0 auto;"><span class="font-myeongjo font-13">링크 복사</span></a>
